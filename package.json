@@ -1,0 +1,21 @@
+{
+  "name": "esportsbih",
+  "version": "1.0.0",
+  "description": "development",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "esports",
+    "bih"
+  ],
+  "author": "zbilje",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "no git"
+  }
+}

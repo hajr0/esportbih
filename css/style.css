@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel');
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Changa', sans-serif
+}
+#login {
+    font-size: 13px;
+    position: relative;
+    float: right;
+    margin-right: 10px;
+}
+#login input {
+    height: 15px;
+    width: 100px;
+    border-radius: 3px;
+}
+#header {
+    height: 230px;
+    background-image: url(header.jpg);
+}
+button {
+    color: red;
+    height: 25px;
+    width: 45px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    font-size: 10px;
+    margin-left: 5px;
+}
+div.container {
+    width: 100%;
+    margin-top: 40px;
+}
+h1 {
+    margin-left: 250px;
+    display: inline-block;
+    color: white;
+    opacity: 0.8;
+    margin-top: 85px;
+    margin-bottom: 70px;
+    font-size: 40px 'bitter';
+}
+h2 {
+    margin-top: 60px;
+    margin-left: 150px;
+    width: 400px;
+    margin-bottom: 40px;
+	text-align: left;
+	color: #899;
+	opacity: 0.9;
+    font-family: 'Cinzel', serif;
+}
+h3 {
+    text-align: center;
+    border-bottom-width: 2px;
+    border-bottom-color: #420;
+}
+h5 {
+    color: #222;
+    font-size: 20pt;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+hr {
+    display: block;
+    margin-bottom: 14px;
+    margin-top: 16px;
+    border-width: 3px;
+    width: 100%;
+}
+footer {
+    display: block;
+}
+textarea {
+    background-color: whitesmoke;
+}
+.logo {
+    position: absolute;
+    margin-left: 20px;
+    padding: 0px;
+    margin-top: 40px;
+    display: block;
+}
+.content {
+    margin: 0px;
+    padding: 0px;
+    height: 850px;
+}
+.vline {
+    border-left: 2px solid #444;
+    height: 750px;
+    position: absolute;
+    display: block;
+    margin-left: -150px;
+}
+.chat {
+    position: fixed;
+    right: 0;
+    top:0;
+    margin-top: 0;
+    padding: 0px;
+    height: 970px;
+    width: 375px;
+    color: snow;
+    transition: 0.3s ease-in-out;
+    background-color: rgba(10, 10, 10, 0.9);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.chatbox {
+    margin: 0;
+    margin-left: 50px;
+    padding: 0;
+    width: 77%;
+    height: 850px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    color: grey;
+    border-radius: 3px;
+}
+.chatbox::-webkit-scrollbar {
+    width: 0;
+}
+.chatbox::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    padding: 2px;
+}
+.chat .chatbox a {
+    text-decoration: none;
+    color: lime;
+    size: 19px;
+    font-weight: bolder;
+}
+.chatsub {
+    margin-left: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+}
+.chatsub {
+    margin-top: 10px;
+    display: flex;
+    align-items: flex-start;
+}
+.chatsub textarea  {
+    width: 70%;
+    height: 50px;
+    margin-top: 5px;
+    resize: none;
+    font-size: 12px;
+    margin-left: 40px;
+    border-radius: 3px;
+}
+.chatsub textarea::-webkit-scrollbar {
+    width: 10px;
+}
+.chatsub textarea::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 2px;
+}
+.chatsub button {
+    margin: 15px 10px 30px 15px;
+    height: 30px;
+    width: 35px;
+    background: rgba(0, 0, 0, 1);
+    border-radius: 5px;
+}
+.closebtn {
+    margin-right: 350px;
+    position: fixed;
+    padding: 450px 10px;
+    height: 900px;
+    background-color: white;
+    color: black;
+    opacity: 0.3;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.openbtn {
+    right: 0;
+    position: fixed;
+    padding: 450px 10px;
+    height: 950px;
+    transition: 0.3s ease-in-out;
+    color: black;
+}
+.informacije {
+    margin-top: 20px;
+    margin-left: 210px;
+    width: 175px;
+    height: 250px;
+    position: absolute;
+}
+.informacije > .profileimg {
+    right: 240px;
+}
+.informacije > .streaminfo {
+    text-decoration: none;
+    list-style-type: none;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: -60px;
+}
+.container {
+    margin: 0px;
+    padding: 0px;
+    height: 750px;
+    width: 100%;
+}
+.text1 {
+    color: red;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: inline-block;
+}
+.link {
+    color: red;
+    margin-left: 40px;
+    margin-top:10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+.stream {
+    margin-left: 600px;
+}
+.vijesti {
+    position: relative;
+    display: inline-block;
+    margin-left: 120px;
+}
+.vijesti2 {
+    position: relative;
+    display: inline-block;
+    margin-left: 120px;
+}
+.vijestbox {
+    height: 250px;
+    width: 450px;
+    display: inline-block;
+    margin: 50px;
+}
+.datum {
+    display: block;
+    float: right;
+    margin-left: 15px;
+}
+.autor {
+    display: block;
+    float: right;
+}
+.news-cont {
+    height: 250px;
+    display: block;
+    margin-top: 50px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom: 3px solid #444;
+}
+.news-cont p {
+    margin: 15px;
+    overflow: hidden;
+    height: 200px;
+    color: black;
+}
+.podnaslov {
+    font-size: 16px;
+    color: darkblue;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.navigation {
+    text-align: center;
+    margin-top: 25px;
+    height: 75px;
+    width: 100%;
+    position: relative;
+}
+.navigation ul li {
+    display: inline-block;
+}
+.navigation ul li a {
+    text-decoration: none;
+    margin-left: 40px;
+    color: black;
+}
+.navigation ul li a:hover {
+    color: #899;
+}
+.nav-sub {
+    position: absolute;
+    display: none;
+    padding-right: 20px;
+    padding-top: 15px;
+    animation: fadein 1.5s;
+}
+.arrow {
+    margin-left: 20px;
+    padding: 0px;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+.navigation li:hover .nav-sub {
+    display: inline-block;
+}
+.nav-sub ul li a {
+    color: #890;
+    opacity: 0.3;
+}

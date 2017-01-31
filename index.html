@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>eSport Bosnia and Herzegovina</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Changa" rel="stylesheet">
+<meta name="esport-BiH" content="HTML, CSS, JavaScript">
+<script src="js/myScript.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+    <form action="login.php" autocomplete="on" id="login">
+            <span class="text1">Username:</span>
+            <input type="text" name="Username">
+            <span class="text1">Password:</span>
+            <input type="password" name="Password...">
+            <button type="Submit">Log in</button>
+            <span class="link">Don't have an account? Please register <button href="register.php">HERE</button></span>
+    </form>
+    <div id="header">
+        <a href="#" class="logo"><img src="css/logo.png" height="150px" width="175px"></a>  
+        <h1>e-Sport Bosnia and Herzegovina</h1>  
+    </div>
+        <div id="chatBox" class="chat">
+                        <span style="font-size:30px;cursor:pointer" href="javascript:void(0)" class="closebtn" onclick="closeChat()">&#187;</span>
+                        <span style="font-size:30px;cursor:pointer" class="openbtn" onclick="openChat()">&#171;</span>
+                    <h3>Online chat</h3>
+                    <div class="chatbox">
+                        <a href="userprofile">Random user:</a><p> This is some text</p>
+                        <a href="userprofile">Random user:</a><p> Message provided by some user</p>
+                        <a href="userprofile">Random user:</a><p> Some another message..!!??!!..</p>
+                        <a href="userprofile">Random user:</a><p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        <a href="userprofile">Random user:</a><p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        <a href="userprofile">Random user:</a><p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                    <div class="chatsub">
+                        <textarea></textarea>
+                        <button>Send</button>
+                    </div>
+        </div>  
+        <nav>
+            <div class="navigation">
+                <ul>
+                    <li><a href="#" class="nav-cont">Home</a>
+                    </li>
+                    <li><a href="#" class="nav-cont">LiveStream</a>
+                    </li>
+                    <li><a href="#" class="nav-cont">Vijesti</a>
+                            <ul class="nav-sub">
+                                <span class="arrow">&#187;</span>
+                                <li><a href="#">Domace</a></li>
+                                <li><a href="#">Strane</a></li>
+                            </ul>
+                    </li>
+                    <li><a href="#" class="nav-cont">e-Sports</a>
+                            <ul class="nav-sub">
+                                <span class="arrow">&#187;</span>
+                                <li><a href="#">LoL</a></li>
+                                <li><a href="#">CS:GO</a></li>
+                                <li><a href="#">DotA2</a></li>
+                                <li><a href="#">Starcraft II</a></li>
+                                <li><a href="#">Overwatch</a></li>
+                            </ul>
+                    </li>
+                    <li><a href="#" class="nav-cont">Forum</a>
+                    </li>
+                    <li><a href="#" class="nav-cont">O Nama</a>
+                    </li>
+                    <li><a href="#" class="nav-cont">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <br /> 
+        <div class="content">
+                <br />
+                    <h2>Online Twitch Stream:</h2>
+                <br />    
+                <div class="informacije">
+                    <img class:"profileimg" src="css/noimg.jpg">
+                    <ul class="streaminfo">
+                        <br /><li>Trenutno online: <b>'username'</b></li>
+                        <br /><li>Ime i prezime: <b>'ime+prezime'</b></li>
+                        <br /><li>e-Sport: <b>'game'</b></li>
+                        <br /><li>Divizija, MMR <b>'divizija;MMR'</b></li>
+                    </ul>
+                </div>   
+                <iframe class="stream" src="https://player.twitch.tv/?channel=streamer" frameborder="0" allowfullscreen="true" scrolling="no" height="400" width="650"></iframe>
+        </div>
+                <br />
+                    <h2>Vijesti Domace:</h2>
+                <br />    
+        <div class="vijesti">
+            <div class="vijestbox">
+                <h5>Prva vijest</h5>
+                <span class="datum">1/17/2017 g.
+                </span>
+                <span class="autor">Moderator name
+                </span>
+                <br>
+                <div class="news-cont">
+                    <span class="podnaslov">Podnaslov vijesti</span>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+            </div>
+            <div class="vijestbox">
+                <h5>Druga vijest:</h5>
+                <span class="datum">1/17/2017 g.
+                </span>
+                <span class="autor">Moderator name
+                </span>
+                <br>
+                <div class="news-cont">
+                    <span class="podnaslov">Podnaslov vijesti</span>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+                </div>
+            </div>
+            <div class="vijestbox">
+                <h5>Treca vijest</h5>
+                <span class="datum">1/17/2017 g.
+                </span>
+                <span class="autor">Moderator name
+                </span>
+                <br>
+                <div class="news-cont">
+                    <span class="podnaslov">Podnaslov vijesti</span>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+                </div>
+            </div>
+        </div>
+                <br />
+                    <h2>Vijesti Strane:</h2>
+                <br />   
+        <div class="vijesti2">
+            <div class="vijestbox">
+                <h5>Prva vijest</h5>
+                <span class="datum">1/17/2017 g.
+                </span>
+                <span class="autor">Moderator name
+                </span>
+                <br>
+                <div class="news-cont">
+                    <span class="podnaslov">Podnaslov vijesti</span>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+            </div>
+            <div class="vijestbox">
+                <h5>Druga vijest</h5>
+                <span class="datum">1/17/2017 g.
+                </span>
+                <span class="autor">Moderator name
+                </span>
+                <br>
+                <div class="news-cont">
+                    <span class="podnaslov">Podnaslov vijesti</span>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+                </div>
+            </div>
+            <div class="vijestbox">
+                <h5>Treca vijest</h5>
+                <span class="datum">1/17/2017 g.
+                </span>
+                <span class="autor">Moderator name
+                </span>
+                <br>
+                <div class="news-cont">
+                    <span class="podnaslov">Podnaslov vijesti</span>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
