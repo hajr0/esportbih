@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Cinzel');
 * {
     margin: 0px;
+    border: 0px;
     padding: 0px;
-    font-family: 'Changa', sans-serif
+    font-family: 'Changa', sans-serif;
+    scroll-behavior: smooth;
 }
+/*---Login forma---*/
 #login {
     font-size: 13px;
     position: relative;
@@ -15,10 +18,6 @@
     width: 100px;
     border-radius: 3px;
 }
-#header {
-    height: 230px;
-    background-image: url(header.jpg);
-}
 button {
     color: red;
     height: 25px;
@@ -27,10 +26,23 @@ button {
     border-radius: 5px;
     font-size: 10px;
     margin-left: 5px;
+    z-index: 10;
 }
-div.container {
+/*---Login forma end---*/
+#header {
+    height: 230px;
+    background-image: url(header.jpg);
+    min-width: 100%;
+}
+#vijesti {
+    display: inline-block;
+    z-index: -1;
     width: 100%;
-    margin-top: 40px;
+}
+#vijesti2 {
+    display: inline-block;
+    z-index: -1;
+    width: 100%;
 }
 h1 {
     margin-left: 250px;
@@ -63,18 +75,25 @@ h5 {
     margin-top: 10px;
     margin-left: 10px;
 }
-hr {
+h6 {
+    margin: 0;
+    padding: 0;
+    font-size: 130%;
+}
+hr { 
     display: block;
-    margin-bottom: 14px;
-    margin-top: 16px;
-    border-width: 3px;
-    width: 100%;
+    border: none;
+    color: white;
+    height: 2px;
+    background: black;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 800, from(#000), to(#fff));
 }
 footer {
     display: block;
 }
-textarea {
-    background-color: whitesmoke;
+div.container {
+    width: 100%;
+    margin-top: 40px;
 }
 .logo {
     position: absolute;
@@ -88,20 +107,15 @@ textarea {
     padding: 0px;
     height: 850px;
 }
-.vline {
-    border-left: 2px solid #444;
-    height: 750px;
-    position: absolute;
-    display: block;
-    margin-left: -150px;
-}
+/*--Chat komponenta! START--*/
 .chat {
     position: fixed;
     right: 0;
     top:0;
     margin-top: 0;
     padding: 0px;
-    height: 970px;
+    height: 100%; 
+    min-height: 0px;
     width: 375px;
     color: snow;
     transition: 0.3s ease-in-out;
@@ -114,7 +128,7 @@ textarea {
     margin-left: 50px;
     padding: 0;
     width: 77%;
-    height: 850px;
+    height: 87%;
     overflow-y: scroll;
     overflow-x: hidden;
     color: grey;
@@ -153,6 +167,9 @@ textarea {
     margin-left: 40px;
     border-radius: 3px;
 }
+textarea {
+    background-color: white;
+}
 .chatsub textarea::-webkit-scrollbar {
     width: 10px;
 }
@@ -173,11 +190,16 @@ textarea {
     position: fixed;
     padding: 450px 10px;
     height: 900px;
-    background-color: white;
     color: black;
     opacity: 0.3;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+    z-index: 1;
+}
+.closebtn:hover {
+    opacity: 0.3;
+    background-color: white;
+    transition: 0.5s ease-in-out;
 }
 .openbtn {
     right: 0;
@@ -185,8 +207,15 @@ textarea {
     padding: 450px 10px;
     height: 950px;
     transition: 0.3s ease-in-out;
-    color: black;
+    color: #222;
+    z-index: 1;
 }
+.openbtn:hover {
+    opacity: 0.3;
+    background-color: #222;
+    transition: 0.5s ease-in-out;
+}
+/*--Chat komponenta! END--*/
 .informacije {
     margin-top: 20px;
     margin-left: 210px;
@@ -227,30 +256,36 @@ textarea {
 .stream {
     margin-left: 600px;
 }
-.vijesti {
+.vrsta_vijesti1 {
+    z-index: -1;
+    width: 398px;
+    height: 175px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0;
+    background-position: center;
     position: relative;
-    display: inline-block;
-    margin-left: 120px;
-}
-.vijesti2 {
-    position: relative;
-    display: inline-block;
-    margin-left: 120px;
 }
 .vijestbox {
-    height: 250px;
-    width: 450px;
-    display: inline-block;
-    margin: 50px;
+    height: 350px;
+    width: 400px;
+    float: left;
+    z-index: -1;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 .datum {
     display: block;
     float: right;
     margin-left: 15px;
+    z-index: -1;
 }
 .autor {
     display: block;
     float: right;
+    z-index: -1;
 }
 .news-cont {
     height: 250px;
@@ -258,19 +293,25 @@ textarea {
     margin-top: 50px;
     border-bottom-right-radius: 3px;
     border-bottom-left-radius: 3px;
-    border-bottom: 3px solid #444;
+    z-index: -1;
 }
-.news-cont p {
-    margin: 15px;
-    overflow: hidden;
-    height: 200px;
+.news-cont a {
+    white-space: nowrap;
+    display: block;
+    text-decoration: none;
+    width: 400px;
+    margin: 0;
     color: black;
+    z-index: -1;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .podnaslov {
     font-size: 16px;
     color: darkblue;
     margin-top: 15px;
     margin-left: 15px;
+    z-index: -1;
 }
 .navigation {
     text-align: center;
@@ -278,17 +319,21 @@ textarea {
     height: 75px;
     width: 100%;
     position: relative;
+    z-index: 0;
 }
 .navigation ul li {
     display: inline-block;
+    z-index: -1;
 }
 .navigation ul li a {
     text-decoration: none;
     margin-left: 40px;
     color: black;
+    z-index: -1;
 }
 .navigation ul li a:hover {
     color: #899;
+    z-index: -1;
 }
 .nav-sub {
     position: absolute;
@@ -296,6 +341,7 @@ textarea {
     padding-right: 20px;
     padding-top: 15px;
     animation: fadein 1.5s;
+    z-index: -1;
 }
 .arrow {
     margin-left: 20px;
