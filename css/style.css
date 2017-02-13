@@ -6,6 +6,9 @@
     font-family: 'Changa', sans-serif;
     scroll-behavior: smooth;
 }
+body {
+    background-color: #999;
+}
 /*---Login forma---*/
 #login {
     font-size: 13px;
@@ -35,14 +38,13 @@ button {
     min-width: 100%;
 }
 #vijesti {
-    display: inline-block;
-    z-index: -1;
-    width: 100%;
-}
-#vijesti2 {
-    display: inline-block;
-    z-index: -1;
-    width: 100%;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: white;
+    border-top: 20px solid #999;
+    border-left:  2px solid #999;
+    border-right:  2px solid #999;
+    height: 100%;
 }
 h1 {
     margin-left: 250px;
@@ -54,7 +56,7 @@ h1 {
     font-size: 40px 'bitter';
 }
 h2 {
-    margin-top: 60px;
+    margin-top: 100px;
     margin-left: 150px;
     width: 400px;
     margin-bottom: 40px;
@@ -72,13 +74,13 @@ h5 {
     color: #222;
     font-size: 20pt;
     float: left;
-    margin-top: 10px;
     margin-left: 10px;
 }
 h6 {
     margin: 0;
     padding: 0;
-    font-size: 130%;
+    font-size: 110%;
+    float: left;
 }
 hr { 
     display: block;
@@ -103,13 +105,18 @@ div.container {
     display: block;
 }
 .content {
-    margin: 0px;
+    margin: auto 15%;
+    background-color: white;
+    border-top: 2px solid grey;
+    border-left:  2px solid #999;
+    border-right:  2px solid #999;
     padding: 0px;
     height: 850px;
 }
 /*--Chat komponenta! START--*/
 .chat {
     position: fixed;
+    z-index: 4;
     right: 0;
     top:0;
     margin-top: 0;
@@ -254,27 +261,39 @@ textarea {
     margin-bottom: 10px;
 }
 .stream {
-    margin-left: 600px;
+    display: inline;
+    margin-left: 400px;
+}
+.vijesti {
+    z-index: 1;
+    width: 100%;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+}
+.vijesti2 {
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    width: 100%;
+    margin-bottom: 40px;
 }
 .vrsta_vijesti1 {
-    z-index: -1;
-    width: 398px;
-    height: 175px;
+    z-index: 1;
+    width: 296px;
+    height: 125px;
     background-size: contain;
     background-repeat: no-repeat;
-    margin: 0;
     background-position: center;
     position: relative;
+    border: 1px solid grey;
+    border-radius: 4px;
 }
 .vijestbox {
-    height: 350px;
-    width: 400px;
-    float: left;
-    z-index: -1;
-    margin-top: 60px;
-    margin-bottom: 30px;
-    margin-left: 5%;
-    margin-right: 5%;
+    height: 200px;
+    width: 300px;
+    z-index: 1;
+    margin: auto;
 }
 .datum {
     display: block;
@@ -299,7 +318,7 @@ textarea {
     white-space: nowrap;
     display: block;
     text-decoration: none;
-    width: 400px;
+    width: 300px;
     margin: 0;
     color: black;
     z-index: -1;
@@ -315,7 +334,6 @@ textarea {
 }
 .navigation {
     text-align: center;
-    margin-top: 25px;
     height: 75px;
     width: 100%;
     position: relative;
@@ -332,7 +350,7 @@ textarea {
     z-index: -1;
 }
 .navigation ul li a:hover {
-    color: #899;
+    color: white;
     z-index: -1;
 }
 .nav-sub {
